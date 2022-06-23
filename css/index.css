@@ -63,7 +63,7 @@ ul {
 }
 /* hero */
 .hero {
-    background: url("../images/herobg.jpg") top center no-repeat;
+    background: url("../images/main.jpg") top center no-repeat;
     height: calc(100vh - 82px);
     background-size: cover;
     position: relative;
@@ -71,6 +71,7 @@ ul {
 .sup__title,
 .title,
 .description {
+    color: #ffff;
     margin: 0;
 }
 .sup__title {
@@ -91,11 +92,15 @@ ul {
 }
 
 .btn {
-    background-color: #22262a;
+    background-color: #ffff;
     padding: 4px 24px;
-    color: #fff;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
+}
+.btn:hover{
+    background: black;
+    color: #ffff;
 }
 .btn + .btn {
     margin-left: 34px;
@@ -240,6 +245,16 @@ ul {
     background-color: #fff;
     padding: 22px 0 0 25px;
 }
+
+.top1,.top2,.top3{
+    width: 500px;
+}
+
+.top3{
+    width: 800px;
+    height: 400px;
+    margin-left: -200px;
+}
 .styles__link {
     position: absolute;
     bottom: 5.7%;
@@ -259,7 +274,7 @@ ul {
 }
 /* TACHEN */
 .TACHEN {
-    background-image: url(../images/TACHEN-bg.jpg);
+    background-image: url(../images/el-alce-web-y9Cj2fwLl7A-unsplash.jpg);
     min-height: 745px;
     background-position: center;
     background-size: cover;
@@ -277,11 +292,13 @@ ul {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+    color: white;
 }
 .TACHEN__title {
     font-weight: bold;
     font-size: 80px;
     line-height: 120px;
+    color: white;
 }
 .TACHEN__btn {
     padding: 4px 24px;
@@ -289,7 +306,8 @@ ul {
     font-size: 18px;
     line-height: 27px;
     color: #fff;
-    background-color: #000;
+    background-color: white;
+    color: #000;
     display: inline-block;
     margin-top: 9px;
 }
@@ -414,6 +432,16 @@ ul {
     font-size: 15px;
     line-height: 22px;
 }
+.fashion__item{
+    max-width: 350px;
+    min-height: 300px;
+}
+
+.mens-fashion{
+    width: 300px;
+    height: 400px;
+}
+
 .header-fix {
     width: 100%;
     position: fixed;
@@ -441,6 +469,7 @@ ul {
 }
 @media screen and (max-width: 1100px) {
     .wow {
+        
         animation-name: none !important;
         visibility: visible !important;
     }
@@ -455,6 +484,7 @@ ul {
         flex-wrap: wrap;
     }
     .fashion__item {
+        
         padding: 25px;
     }
     .row__styles {
